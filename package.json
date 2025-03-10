@@ -1,0 +1,19 @@
+{
+  "name": "eleventy---playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "axios": "^1.7.7",
+    "markdown-it-attrs": "^4.2.0",
+    "markdown-to-txt": "^2.0.1"
+  }
+}

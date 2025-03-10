@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    -->
+
+    <title>{{ title }}</title>  
+    <link rel="stylesheet" href="/css/post.css" /> 
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+
+    <!-- are.na fetch -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      
+  
+</head>
+
+<body>
+    
+
+    <div class="header" id="header">
+        <div class="home">
+            <a href="/">🌱 danielweber</a>
+            <!--<span id="top"></span>-->
+        </div>
+       <div class="fill"></div>
+    </div>
+
+    <div class="post__body">
+        <div class="title">
+            <span id="top"></span>
+            <a>{{ title }}</a>
+        </div>
+        <div class="prispevek__container">
+            
+            <div class="prispevek__obsah">
+            <div class="prispevek__fotka">
+                <div class="image__container2">
+                <img src="{{ image }}" alt="{{ imageAlt }}" class="post__feed2">
+                </div>
+            </div>
+            <div class="prispevek__uvod">
+                <div class="tags__post">
+                {% for tag in tags %}
+                    <button class="tag"><a href="/tag/{{ tag | slugify }}/#scroll">#{{ tag }}</a></button>
+                {% endfor %}
+                </div>
+                <p class="title"> {{ uvod }} </p>
+            </div>
+            </div>
+        </div>   
+
+        <div class="prispevek__container">
+            <div class="prispevek__obsah">
+            {{ content | safe }}
+            </div>
+        </div>
+
+        <div class="post__footer">
+            <span><a href="#top">zpátky nahoru</a></span>
+            <div class="list">
+                <a href="#top"> <img src="/images/list.png" class="list"></a>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
