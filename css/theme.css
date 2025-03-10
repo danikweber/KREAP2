@@ -1,0 +1,205 @@
+:root{
+    --primary-color: #389B59;
+    --secondary-color: #FFFDE7;
+    --font-size: 1rem;
+    --border-radius: 30px;
+    --border-radius-link: 5px;
+    --border-radius-img: 17px;
+    --border: 1px solid var(--primary-color);
+    --font-family: 'andale mono', monospace;
+    --background-color-code-block: #389b592e;
+
+    --padding: 30px;
+    --padding-body: var(--padding) var(--padding) 0 0;
+
+    /* ARE:NA FETCH STYLING*/
+    
+}
+
+html, body {
+    scroll-behavior: smooth !important;
+    font-family: var(--font-family);
+}
+
+
+H1{
+    font-family: var(--font-family);
+    color: var(--primary-color);
+    margin: 15px 0 15px 0;
+}
+
+H2{
+    font-family: var(--font-family);
+    color: var(--primary-color);
+    padding: 15px 0 15px 0;
+    margin: 0 !important;
+}
+
+p{
+    font-family: var(--font-family);
+    font-weight: 500;
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    padding-bottom: 15px;
+    font-size: 1rem;
+}
+
+a{
+    font-family: var(--font-family);
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a.tag{
+    font-family: var(--font-family);
+    color: var(--primary-color);
+    font-size: 1rem;
+    padding: 0px 5px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    background-color: transparent;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-top: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+a.tag_active{
+    font-family: var(--font-family);
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    font-size: 1rem;
+    padding: 0px 5px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-top: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+.link{
+    font-family: var(--font-family);
+    color: var(--primary-color);
+    font-size: 1rem;
+    padding: 0px 5px;
+    border: var(--border);
+    border-radius: var(--border-radius-link);
+    background-color: transparent;
+    margin: 2px -2px 5px 0;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.link:hover{
+    font-family: var(--font-family);
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    font-size: 1rem;
+    padding: 0px 5px;
+    border: var(--border);
+    border-radius: var(--border-radius-link);
+    margin: 2px -2px 5px 0;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+button.link:active{
+    font-family: var(--font-family);
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    font-size: 1rem;
+    padding: 0px 5px;
+    border: var(--border);
+    border-radius: var(--border-radius-link);
+    margin: 2px -2px 5px 0;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+div.tags{
+    padding-top: 5px;
+}
+
+
+button.tag{ 
+    font-family: var(--font-family);
+    color: var(--primary-color);
+    font-size: 1rem;
+    padding: 0px 5px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    background-color: transparent;
+    margin-bottom: 5px;
+    margin-right: -2px;
+    margin-top: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+button.tag:hover{ 
+    font-family: var(--font-family);
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    font-size: 1rem;
+    padding: 0px 5px;
+    border: var(--border);
+    border-radius: 30px;
+    margin-bottom: 5px;
+    margin-right: -2px;
+    margin-top: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+button.tag:active{ 
+    font-family: var(--font-family);
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    font-size: 1rem;
+    padding: 0px 5px;
+    border: var(--border);
+    border-radius: 30px;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-top: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+code{
+    font-family: var(--font-family);
+    background-color: var(--background-color-code-block);
+    border-radius: 4px;
+    padding: 2px 6px;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+   
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: var(--secondary-color);
+    background: var(--primary-color);
+  }
+  
+  ::selection {
+    color: var(--secondary-color);
+    background: var(--primary-color);
+  }
+
+
+
+  
