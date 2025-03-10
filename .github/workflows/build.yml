@@ -7,5 +7,5 @@ jobs:
   build_web:
     runs_on: ubuntu-latest
     steps:
-      - name: print working directory
+      - name: print_working_directory
         run: pwd
