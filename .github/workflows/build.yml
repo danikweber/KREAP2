@@ -7,9 +7,17 @@ jobs:
   build_web:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@4
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
       - name: try_npm
         run: npm -v
+      - name: install_11ty
+        run: npm install --save-dev @11ty/eleventy
+      - name: build_web
+        run: npx @11ty/eleventy
+      - name: ls
+        run: ls
+      - name: ls_site
+        run: ls _site 
