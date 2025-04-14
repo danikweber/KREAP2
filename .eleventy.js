@@ -47,6 +47,7 @@ module.exports = function (eleventyConfig) {
       eleventyConfig.setLibrary('md', markdownLib)
 
     return {
+        pathPrefix: "KREAP2",
         dir: {
             input: 'src',
             includes: '_includes',
