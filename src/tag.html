@@ -25,9 +25,9 @@ eleventyComputed:
         <div class="info">
             <div class="post">
                 <p class="post">
-                    Ahoj, ja jsem Daniel. Studuju na FaVU a jsem součástí <button class="link"><a href="https://agdx.info" target="_blank">➝AGDX</a></button>. Jedním z mých velkých projektů je <button class="link"><a href="https://humanoddity.cz/" target="_blank">➝HUMANODDITY</a></button>, přes který zkoumám <button class="tag"><a href="/tag/design#scroll">#DESIGN</a></button>, <button class="tag"><a href="/tag/moda#scroll">#MÓDU</a></button> a <button class="tag"><a href="/tag/udrzitelnost#scroll">#UDRŽITELNOST</a></button>. 
+                    Ahoj, ja jsem Daniel. Studuju na FaVU a jsem součástí <button class="link"><a href="https://agdx.info" target="_blank">➝AGDX</a></button>. Jedním z mých velkých projektů je <button class="link"><a href="https://humanoddity.cz/" target="_blank">➝HUMANODDITY</a></button>, přes který zkoumám <button class="tag"><a href="tag/design#scroll">#DESIGN</a></button>, <button class="tag"><a href="tag/moda#scroll">#MÓDU</a></button> a <button class="tag"><a href="tag/udrzitelnost#scroll">#UDRŽITELNOST</a></button>. 
                     Tento web je můj research a experiment s tvorbou mého místa na internetu, které není vázané na velké korporace (META, tiktok, …) a které má co nejmenší environmentální dopad. 
-                    Mimo to rád čtu tyhle <button class="tag"><a href="/tag/knihy#scroll" >#KNIHY</a></button> a poslouchám nebo tvořím <button class="tag"><a href="/tag/zvuky#scroll">#ZVUKY</a></button>. 
+                    Mimo to rád čtu tyhle <button class="tag"><a href="tag/knihy#scroll" >#KNIHY</a></button> a poslouchám nebo tvořím <button class="tag"><a href="tag/zvuky#scroll">#ZVUKY</a></button>. 
                 </p>
                 <ul class="accordion">
                     <li class="accordion"> 
@@ -54,16 +54,16 @@ eleventyComputed:
             </div>
             <div class="post"><p class="post">typ obsahu:</p>
                 <div class="tags">
-                    <button class="tag"><a href="/tag/knihy#scroll" >#KNIHY</a></button>
-                        <button class="tag"><a href="/tag/esej#scroll" >#ESEJ</a></button>
-                        <button class="tag"><a href="/tag/research#scroll" >#RESEARCH</a></button>
+                    <button class="tag"><a href="tag/knihy#scroll" >#KNIHY</a></button>
+                        <button class="tag"><a href="tag/esej#scroll" >#ESEJ</a></button>
+                        <button class="tag"><a href="tag/research#scroll" >#RESEARCH</a></button>
                     
                 </div>
             </div>
             <div class="post"><p class="post">všechna témata:</p>
                 <div class="tags">
                     {% for tag in collections.allTags %}
-                        <button class="tag"><a href="/tag/{{ tag | slugify }}#scroll" >#{{ tag }}</a></button>
+                        <button class="tag"><a href="tag/{{ tag | slugify }}#scroll" >#{{ tag }}</a></button>
                     {% endfor %}
                 </div>
             </div>
@@ -107,7 +107,7 @@ eleventyComputed:
                 <a href="{{post.url}}" class="title"> {{ post.data.title }} </a>
                 <div class="tags">
                     {% for tag in post.data.tags %}
-                        <button class="tag"><a href="/tag/{{ tag | slugify }}#scroll">#{{ tag }}</a></button>
+                        <button class="tag"><a href="tag/{{ tag | slugify }}#scroll">#{{ tag }}</a></button>
                     {% endfor %}
                 </div>
             
